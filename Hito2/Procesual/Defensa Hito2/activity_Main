@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fondo"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageView
+                android:src="@drawable/corona"
+                android:layout_width="80dp"
+                android:layout_height="40dp">
+
+            </ImageView>
+            
+            <TextView
+                android:text="@string/app_name"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+        </LinearLayout>
+        
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            
+            <TextView
+                android:text="@string/ciudadCB"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                
+                <TextView
+                    android:id="@+id/txtConfCB"
+                    android:text="@string/confirmados"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/etConfCB"
+                    android:text="@string/placeholder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </EditText>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtSosCB"
+                    android:text="@string/sospechosos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/etSosCB"
+                    android:text="@string/placeholder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </EditText>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="@string/ciudadSC"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtConSC"
+                    android:text="@string/confirmados"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/etConfSC"
+                    android:text="@string/placeholder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </EditText>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtSosSC"
+                    android:text="@string/sospechosos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/etSosSC"
+                    android:text="@string/placeholder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </EditText>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="@string/ciudadOR"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtConfOR"
+                    android:text="@string/confirmados"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/etConfOR"
+                    android:text="@string/placeholder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </EditText>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtSosOR"
+                    android:text="@string/sospechosos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/etSosOR"
+                    android:text="@string/placeholder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </EditText>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/etConfirmados"
+                    android:hint="@string/cf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </EditText>
+
+                <EditText
+                    android:id="@+id/etSospechosos"
+                    android:hint="@string/cs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </EditText>
+
+                <EditText
+                    android:id="@+id/etCity"
+                    android:hint="@string/city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </EditText>
+
+                <Button
+                    android:id="@+id/btSetValues"
+                    android:text="@string/setValues"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </Button>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/etBusqueda"
+                    android:hint="@string/busqueda"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </EditText>
+
+                <Button
+                    android:id="@+id/btnCalcular"
+                    android:text="@string/calcular"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content">
+
+                </Button>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
