@@ -1,1 +1,133 @@
 
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fondo"
+        tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="32dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/calc">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="15dp"
+            android:text="@string/saludo"/>
+
+        <EditText
+            android:id="@+id/etNumber1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/numero1"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorAccent">
+        </EditText>
+
+
+        <EditText
+            android:id="@+id/etNumber2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/numero2"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorAccent">
+
+        </EditText>
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/respuesta" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btSumar"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:text="@string/sumar">
+
+            </Button>
+
+            <Button
+                android:id="@+id/btRestar"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="@string/restar">
+
+            </Button>
+
+            <Button
+                android:id="@+id/btMultiplicar"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="@string/multiplicar">
+
+            </Button>
+
+            <Button
+                android:id="@+id/btDividir"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:text="@string/dividir">
+
+            </Button>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="32dp">
+        <Button
+            android:id="@+id/btClean"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="@string/clean">
+
+        </Button>
+
+        <Button
+            android:id="@+id/btCalc2"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="@string/calc2">
+
+
+        </Button>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
