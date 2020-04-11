@@ -1,0 +1,127 @@
+package com.example.examen_hito2_juliomedrano_terminado;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
+
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+    private EditText etConfirmados, etSospechosos, etCity;
+    private EditText etConfCB, etSosCB, etConfSC, etSosSC, etConfOR, etSosOR;
+    private EditText etBusqueda;
+    private Button btnCalcular;
+    private Button btSetValues;
+    private String sConf, sSosp,sCiudad;
+    private String n1cbba, n2sc, n3or, option;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        initializevariables();
+    }
+
+    public void initializevariables(){
+        etConfirmados = findViewById(R.id.etConfirmados); //recupera lo que hay en la caja de texto
+        etSospechosos = findViewById(R.id.etSospechosos);
+        etCity = findViewById(R.id.etCity);
+
+        etConfCB = findViewById(R.id.etConfCB);
+        etConfSC = findViewById(R.id.etConfSC);
+        etConfOR = findViewById(R.id.etConfOR);
+
+        etSosCB = findViewById(R.id.etSosCB);
+        etSosSC = findViewById(R.id.etSosSC);
+        etSosOR = findViewById(R.id.etSosOR);
+
+        btSetValues = findViewById(R.id.btSetValues);
+        btSetValues.setOnClickListener(this);
+
+        etBusqueda = findViewById(R.id.etBusqueda);
+
+        btnCalcular = findViewById(R.id.btnCalcular);
+        btnCalcular.setOnClickListener(this);
+
+    }
+
+    /**
+     * Called when a view has been clicked.
+     *
+     * @param v The view that was clicked.
+     */
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()){
+            case R.id.btSetValues:
+                setValues();
+            break;
+            case R.id.btnCalcular:
+                calcular();
+                break;
+        }
+    }
+
+    public  void  setValues() {
+        sConf = etConfirmados.getText().toString();//recupera los valores cada vez que se hace click en el boton setvalues
+        sSosp = etSospechosos.getText().toString();
+        sCiudad = etCity.getText().toString();
+
+        if (sCiudad.equals("COCHABAMBA")){
+            etConfCB.setText(sConf);
+            etSosCB.setText(sSosp);
+        }
+
+        if (sCiudad.equals("SANTA CRUZ")){
+            etConfSC.setText(sConf);
+            etSosSC.setText(sSosp);
+        }
+
+        if (sCiudad.equals("ORURO")){
+            etConfOR.setText(sConf);
+            etSosOR.setText(sSosp);
+        }
+
+
+    }
+
+    public void calcular(){
+        int n1,n2,n3,mayor;
+        option = etBusqueda.getText().toString();
+        if (option.equals("confirmados")){
+            n1cbba = etConfCB.getText().toString();
+            n2sc = etConfSC.getText().toString();
+            n3or = etConfOR.getText().toString();
+        }
+
+        if (option.equals("sospechosos")){
+            n1cbba = etSosCB.getText().toString();
+            n2sc = etSosSC.getText().toString();
+            n3or = etSosOR.getText().toString();
+        }
+
+        n1 = Integer.parseInt(n1cbba);
+        n2 = Integer.parseInt(n2sc);
+        n3 = Integer.parseInt(n3or);
+
+        if (n1>n2 ){
+            if(n1>n3){
+                mayor=n1;
+            }else {
+                mayor=n3;
+            }
+        } else {
+            if(n2>n3){
+                mayor = n2;
+            }else {
+                mayor = n3;
+            }
+        }
+
+        Toast.makeText(this,"El mayor numero es: " + mayor, Toast.LENGTH_LONG).show();
+
+
+    }
+}
