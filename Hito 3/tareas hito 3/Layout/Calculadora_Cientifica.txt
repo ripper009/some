@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context=".App.CalculadoraCientifica">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/TituCalcuCienti"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="40dp"
+            android:textSize="35dp"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:fontFamily="@font/baumans"
+            android:text="@string/calctitulo">
+        </TextView>
+
+        <TextView
+            android:id="@+id/twDisplay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/Display"
+            android:layout_marginTop="10dp"
+            android:textAlignment="viewEnd"
+            android:textSize="50dp"
+            android:fontFamily="@font/baumans"
+            android:textStyle="bold"
+            android:background="@drawable/style_edtxt"
+            android:textColorHint="@color/colorWhite">
+
+        </TextView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="45dp">
+
+            <Button
+                android:id="@+id/btnPorcentaje"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/style_btn"
+                android:fontFamily="@font/baumans"
+                android:text="@string/btporcentaje"
+                android:textColor="@color/colorWhite"
+                android:textSize="25dp"
+                android:textStyle="bold">
+
+            </Button>
+
+            <Button
+                android:id="@+id/btnPotencia"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/style_btn"
+                android:text="@string/btpotencia"
+                android:textSize="25dp"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:fontFamily="@font/baumans">
+
+            </Button>
+            <Button
+                android:id="@+id/btnParentesis"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/style_btn"
+                android:text="@string/btparentesis"
+                android:textSize="25dp"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:fontFamily="@font/baumans">
+
+            </Button>
+            <Button
+                android:id="@+id/btnlimpiar"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/style_btn"
+                android:text="@string/btdelete"
+                android:textSize="25dp"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:fontFamily="@font/baumans">
+
+            </Button>
+            <Button
+                android:id="@+id/btnDividir"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/style_btn"
+                android:text="@string/btdividir"
+                android:textSize="25dp"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:fontFamily="@font/baumans">
+
+            </Button>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="0dp">
+
+            <TextView
+                android:id="@+id/twShift"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/shift"
+                android:textSize="25dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/style_edtxt"
+                android:textStyle="bold">
+
+            </TextView>
+
+
+
+            <Button
+                android:id="@+id/btnRaiz"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/style_btn"
+                android:text="@string/btraiz"
+                android:textSize="25dp"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:fontFamily="@font/baumans">
+
+            </Button>
+
+            <Button
+                android:id="@+id/btn7"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/style_btn"
+                android:text="@string/bt7"
+                android:textSize="25dp"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:fontFamily="@font/baumans">
+
+            </Button>
+            <Button
+                android:id="@+id/btn8"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/style_btn"
+                android:text="@string/bt8"
+                android:textSize="25dp"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:fontFamily="@font/baumans">
+
+            </Button>
+            <Button
+                android:id="@+id/btn9"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/style_btn"
+                android:text="@string/bt9"
+                android:textSize="25dp"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:fontFamily="@font/baumans">
+
+            </Button>
+            <Button
+                android:id="@+id/btnMultiplicar"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/style_btn"
+                android:text="@string/btmultiplicar"
+                android:textSize="25dp"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:fontFamily="@font/baumans">
+
+            </Button>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="0dp">
+            <TextView
+                android:id="@+id/twSecante"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btsecante"
+                android:textSize="25dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <Button
+                android:id="@+id/btnSeno"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/style_btn"
+                android:text="@string/btseno"
+                android:textSize="25dp"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:fontFamily="@font/baumans">
+
+            </Button>
+
+            <Button
+                android:id="@+id/btn4"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/style_btn"
+                android:text="@string/bt4"
+                android:textSize="25dp"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:fontFamily="@font/baumans">
+
+            </Button>
+            <Button
+                android:id="@+id/btn5"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/style_btn"
+                android:text="@string/bt5"
+                android:textSize="25dp"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:fontFamily="@font/baumans">
+
+            </Button>
+            <Button
+                android:id="@+id/btn6"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/style_btn"
+                android:text="@string/bt6"
+                android:textSize="25dp"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:fontFamily="@font/baumans">
+
+            </Button>
+            <Button
+                android:id="@+id/btnRestar"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/style_btn"
+                android:text="@string/btrestar"
+                android:textSize="25dp"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:fontFamily="@font/baumans">
+
+            </Button>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="0dp">
+
+            <TextView
+                android:id="@+id/twCosecante"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btcosecante"
+                android:textSize="25dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold">
+
+            </TextView>
+            <Button
+                android:id="@+id/btnCoseno"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/style_btn"
+                android:text="@string/btcoseno"
+                android:textSize="25dp"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:fontFamily="@font/baumans">
+
+            </Button>
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/style_btn"
+                android:text="@string/bt1"
+                android:textSize="25dp"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:fontFamily="@font/baumans">
+
+            </Button>
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/style_btn"
+                android:text="@string/bt2"
+                android:textSize="25dp"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:fontFamily="@font/baumans">
+
+            </Button>
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/style_btn"
+                android:text="@string/bt3"
+                android:textSize="25dp"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:fontFamily="@font/baumans">
+
+            </Button>
+            <Button
+                android:id="@+id/btnSumar"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/style_btn"
+                android:text="@string/btsumar"
+                android:textSize="25dp"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:fontFamily="@font/baumans">
+
+            </Button>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="0dp">
+
+            <TextView
+                android:id="@+id/twcoTangente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btcotangente"
+                android:textSize="25dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold">
+
+            </TextView>
+            <Button
+                android:id="@+id/btnTangente"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/style_btn"
+                android:text="@string/bttangente"
+                android:textSize="25dp"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:fontFamily="@font/baumans">
+
+            </Button>
+
+            <Button
+                android:id="@+id/btnfacto"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/style_btn"
+                android:text="@string/btfactorial"
+                android:textSize="25dp"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:fontFamily="@font/baumans">
+
+            </Button>
+            <Button
+                android:id="@+id/btn0"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/style_btn"
+                android:text="@string/btcero"
+                android:textSize="25dp"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:fontFamily="@font/baumans">
+
+            </Button>
+            <Button
+                android:id="@+id/btnPunto"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/style_btn"
+                android:text="@string/btpunto"
+                android:textSize="25dp"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:fontFamily="@font/baumans">
+
+            </Button>
+            <Button
+                android:id="@+id/btnIgual"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/style_btn"
+                android:text="@string/btigual"
+                android:textSize="25dp"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:fontFamily="@font/baumans">
+
+            </Button>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

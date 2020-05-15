@@ -1,0 +1,79 @@
+<resources>
+    <!--nombre app-->
+    <string name="app_name">Unifranzitos</string>
+    <!--Pantalla 1-->
+    <string name="title1">Bienvenidos</string>
+    <string name="desc1">Campeonato de futbool Unifranzitos a nivel local y todas las sedes.</string>
+    <!--Pantalla 2-->
+    <string name="title2">Grandes Premios</string>
+    <string name="desc2">Se tiene la categoria varones y mujeres con premiacion hasta el 3er lugar</string>
+    <!--Pantalla 3-->
+    <string name="title3">Inscripcion</string>
+    <string name="desc3">Inscribe a tu equipo desde la App</string>
+
+    <!--Botonera-->
+    <string name="next">Siguiente</string>
+    <string name="back">Atras</string>
+    <string name="done">Finalizar</string>
+    <string name="Entrada">Login</string>
+
+    <!--Pantalla 4-->
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+
+    <!--Botones Login-->
+    <string name="login">LOGIN</string>
+    <string name="register">REGISTER</string>
+
+    <!--Pantalla calculadora-->
+    <string name="tituloCal">Calculadora Basica</string>
+    <string name="num1">Primer Numero</string>
+    <string name="num2">Segundo Numero</string>
+    <string name="resp">Respuesta</string>
+
+    <!--Botones Calculadora-->
+    <string name="sum">+</string>
+    <string name="rest">-</string>
+    <string name="mult">*</string>
+    <string name="div">/</string>
+    <string name="defa">Limpiar</string>
+
+    <!--Botonoes y componentes calculadora cientifica-->
+    <string name="btsumar">+</string>
+    <string name="btrestar">-</string>
+    <string name="btdividir">/</string>
+    <string name="btmultiplicar">*</string>
+    <string name="btigual">=</string>
+    <string name="btpunto">.</string>
+    <string name="btparentesis">()</string>
+    <string name="btpotencia">^</string>
+    <string name="btporcentaje">%</string>
+    <string name="btraiz">1/x</string>
+    <string name="btseno">sin</string>
+    <string name="btcoseno">cos</string>
+    <string name="bttangente">tan</string>
+    <string name="btcosecante">csc</string>
+    <string name="btsecante">sec</string>
+    <string name="btcotangente">ctg</string>
+    <string name="btfactorial">x!</string>
+    <string name="btcero">0</string>
+    <string name="bt1">1</string>
+    <string name="bt2">2</string>
+    <string name="bt3">3</string>
+    <string name="bt4">4</string>
+    <string name="bt5">5</string>
+    <string name="bt6">6</string>
+    <string name="bt7">7</string>
+    <string name="bt8">8</string>
+    <string name="bt9">9</string>
+    <string name="btdelete">C</string>
+    <string name="calctitulo">CALCULADORA CIENTIFICA</string>
+    <string name="Display">0</string>
+    <string name="shift">Shft</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>
