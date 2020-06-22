@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlListItem2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color2"
+    android:padding="12dp">
+
+    <TextView
+        android:id="@+id/tvImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/canada"
+
+        android:layout_centerVertical="true"
+        android:padding="8dp"
+        android:textColor="@color/colorWhite"
+        android:textSize="25sp"
+        android:layout_marginStart="20dp"
+        android:clickable="true"
+        >
+
+    </TextView>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+
+        android:id="@+id/civItem1"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@mipmap/ic_launcher_round"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="5dp"
+        />
+    <de.hdodenhof.circleimageview.CircleImageView
+
+        android:id="@+id/civItem2"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@mipmap/ic_launcher_round"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="5dp"
+        android:visibility="invisible"
+        />
+    <de.hdodenhof.circleimageview.CircleImageView
+
+        android:id="@+id/civItem3"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@mipmap/ic_launcher_round"
+        android:layout_marginLeft="230dp"
+        android:layout_marginTop="5dp"
+        />
+
+</RelativeLayout>
